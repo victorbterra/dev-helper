@@ -3,6 +3,8 @@ let dados = [];
 const resultadoContainer = document.querySelector("#resultado-pesquisa");
 const btnPesquisa = document.querySelector("#btn-pesquisa");
 
+
+
 async function carregarDados() {
   const campoPesquisa = document.querySelector("#campo-pesquisa");
   const valorPesquisa = campoPesquisa.value.toLowerCase();
@@ -56,3 +58,12 @@ function exbirResultados(resultado) {
 
     resultadoContainer.classList.remove("hidden");
 }
+
+
+const campoPesquisa = document.querySelector("#campo-pesquisa"); // seleciona o campo de pesquisa
+campoPesquisa.addEventListener("input", carregarDados); // adiciona evento de input para pesquisa em tempo real
+btnPesquisa.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        carregarDados();
+    }
+}); // adiciona evento de tecla para pesquisa ao pressionar Enter

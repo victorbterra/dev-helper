@@ -8,6 +8,8 @@ main {
   padding: 1rem 0;
 }
 
+
+
 .resultado-pesquisa.hidden {
   display: none;
 }
@@ -26,6 +28,7 @@ main {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .info-wrapper {
@@ -94,6 +97,7 @@ main {
   color: #4CAF50; /* Cor verde para o ícone de check */
   margin-right: 0.5rem;
 }
+
 
 @media (max-width: 425px) {
   .resultado-wrapper {

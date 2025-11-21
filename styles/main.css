@@ -1,0 +1,99 @@
+main {
+  flex-grow: 1; /* Faz o main ocupar o espaço restante */
+  overflow-y: auto; /* Adiciona rolagem apenas no main se o conteúdo for grande */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  border: 1px solid var(--cor-accento);
+}
+
+.resultado-pesquisa {
+  width: 100%;
+  padding: 1rem;
+}
+
+.resultado-wrapper {
+    display: flex;
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-wrapper {
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+.titulo-resultado {
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.descricao-resultado {
+  color: var(--cor-texto);
+  font-size: 1.2rem;
+}
+
+.exemplo-resultado {
+  display: block;
+  max-width: 400px;
+  margin-top: 1rem;
+  background-color: #1e1e1e;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #d4d4d4;
+}
+
+.tags-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-resultado {
+    background-color: var(--cor-accento);
+    color: var(--cor-texto);
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.titulo-solucoes {
+  color: var(--cor-texto);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.lista-solucoes {
+  list-style: none;
+}
+
+.lista-solucoes li {
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+  font-size: 1.1rem;
+}
+
+.lista-solucoes li i {
+  color: #4CAF50; /* Cor verde para o ícone de check */
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 425px) {
+  .resultado-wrapper {
+    flex-direction: column;
+  }
+
+  .exemplo-resultado {
+    max-width: 100%;
+  }
+}

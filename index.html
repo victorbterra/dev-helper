@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Dev helper</title>
 </head>
@@ -20,6 +22,36 @@
             </div>
         </div>
     </header>
+    <main>
+        <div class="container">
+            <section id="resultado-pesquisa" class="resultado-pesquisa">
+                <!-- Resultados da pesquisa serão exibidos aqui -->
+                 <article class="resultado-wrapper">
+                    <div class="info-wrapper">
+                        <h2 class="titulo-resultado">Erro 404 - Página não encontrada</h2>
+                        <p class="descricao-resultado">O erro 404 indica que a página solicitada não foi encontrada no servidor. Isso pode ocorrer por diversos motivos, como um link quebrado ou uma URL digitada incorretamente.</p>
+                        <span class="exemplo-resultado">
+                            Exemplo de código:
+                            <pre><code>HTTP/1.1 404 Not Found</code></pre>
+                        </span>
+                        <div class="tags-wrapper">
+                            <span class="tag-resultado">HTTP</span>
+                            <span class="tag-resultado">Erro</span>
+                            <span class="tag-resultado">Web</span>
+                        </div>
+                    </div>
+                    <div class="possiveis-solucoes-wrapper">
+                        <h3 class="titulo-solucoes">Possíveis soluções:</h3>
+                        <ul class="lista-solucoes">
+                            <li><i class="fas fa-check-circle"></i>Verifique se a URL está correta.</li>
+                            <li><i class="fas fa-check-circle"></i>Atualize a página para garantir que o link não esteja temporariamente indisponível.</li>
+                            <li><i class="fas fa-check-circle"></i>Consulte o administrador do site para obter mais informações.</li>
+                        </ul>
+                    </div>
+                 </article>
+            </section>
+        </div>
+    </main>
     
 </body>
 </html>

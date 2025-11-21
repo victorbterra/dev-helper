@@ -6,10 +6,16 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-  border: 1px solid var(--cor-accento);
+}
+
+.resultado-pesquisa.hidden {
+  display: none;
 }
 
 .resultado-pesquisa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 1rem;
 }

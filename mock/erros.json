@@ -1,0 +1,58 @@
+[
+  {
+    "titulo": "Erro 400 Bad Request",
+    "descricao": "O servidor não entendeu a requisição devido a sintaxe inválida.",
+    "exemplo": "Enviar texto num campo que espera número.",
+    "tags": "http, requisicao, cliente",
+    "possiveis_solucoes": "Verifique o formato do JSON enviado ou os tipos de dados dos campos."
+  },
+  {
+    "titulo": "Erro 401 Unauthorized",
+    "descricao": "O acesso foi negado. Requer autenticação.",
+    "exemplo": "Acessar dashboard sem fazer login.",
+    "tags": "http, login, auth, seguranca",
+    "possiveis_solucoes": "Verifique se o token de acesso (JWT) está válido ou faça login novamente."
+  },
+  {
+    "titulo": "Erro 403 Forbidden",
+    "descricao": "Servidor entendeu, mas recusou autorizar.",
+    "exemplo": "Usuário comum tentando apagar um admin.",
+    "tags": "http, permissao, acesso, proibido",
+    "possiveis_solucoes": "Verifique as permissões (roles) do usuário no banco de dados."
+  },
+  {
+    "titulo": "Erro 404 Not Found",
+    "descricao": "O servidor não encontrou o recurso.",
+    "exemplo": "URL digitada errada.",
+    "tags": "http, url, pagina, nao encontrado",
+    "possiveis_solucoes": "Confira a URL, a rota no backend ou se o arquivo realmente existe."
+  },
+  {
+    "titulo": "Erro 500 Internal Server Error",
+    "descricao": "Erro genérico no lado do servidor.",
+    "exemplo": "Falha na conexão com o DB.",
+    "tags": "http, servidor, banco de dados, critico",
+    "possiveis_solucoes": "Verifique os logs do servidor (terminal) para ver a linha exata do erro."
+  },
+  {
+    "titulo": "ReferenceError",
+    "descricao": "Tentativa de acessar variável inexistente.",
+    "exemplo": "console.log(x) // x não foi criado.",
+    "tags": "javascript, js, variavel, escopo",
+    "possiveis_solucoes": "Declare a variável antes de usar (const, let) ou verifique a ortografia."
+  },
+  {
+    "titulo": "TypeError",
+    "descricao": "Operação em tipo de dado errado.",
+    "exemplo": "nome.toUpperCase() // se nome for null.",
+    "tags": "javascript, js, tipos, funcao",
+    "possiveis_solucoes": "Use console.log para checar o tipo do dado ou faça uma validação (if) antes."
+  },
+  {
+    "titulo": "CORS Policy Error",
+    "descricao": "Bloqueio de segurança do navegador entre domínios diferentes.",
+    "exemplo": "Frontend chamando Backend em portas diferentes.",
+    "tags": "navegador, seguranca, api, fetch",
+    "possiveis_solucoes": "No backend, instale e configure o pacote 'cors' para aceitar requisições."
+  }
+]

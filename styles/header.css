@@ -7,6 +7,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+    padding-inline: 1rem;
 }
 
 .logo {
@@ -59,19 +60,15 @@ header {
 }
 
 @media (max-width: 768px) {
-  .campo-pesquisa {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header-wrapper {
+    .header-wrapper {
     flex-direction: column;
     justify-content: center;
-    padding-inline: 1rem;
   }
   .inputsearch-wrapper {
     margin-top: 8px;
+    width: 100%;
+  }
+  .campo-pesquisa {
     width: 100%;
   }
 }

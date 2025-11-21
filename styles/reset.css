@@ -15,6 +15,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
   font-family: var(--font-base);

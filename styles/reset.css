@@ -1,1 +1,29 @@
 /* Resets Globais e configurações de cores */
+
+:root {
+    --cor-fundo: #1d1d1d;
+    --cor-texto: #E1E1E6;
+    --cor-accento: #319c43;
+    --font-base: 'Segoe UI',sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--font-base);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

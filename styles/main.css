@@ -58,6 +58,7 @@ main {
 }
 
 .tags-wrapper {
+    list-style: none;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
